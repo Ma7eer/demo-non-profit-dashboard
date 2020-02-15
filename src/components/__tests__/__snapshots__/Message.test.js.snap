@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it returns a toastr message 1`] = `
+<div
+  className="Toastify"
+/>
+`;
