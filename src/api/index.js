@@ -8,7 +8,7 @@ export let url = null
 if (process.env.NODE_ENV === 'development') {
   url = 'http://localhost:5000'
 } else {
-  url = 'https://dashboard.alrahma-baraka.com:5001'
+  url = 'https://shielded-sands-73829.herokuapp.com:5001'
 }
 
 export const getData = path => {
