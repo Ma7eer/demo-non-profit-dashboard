@@ -5,11 +5,11 @@ import Message from '../data/toastrMessages'
 
 export let url = null
 
-if (process.env.NODE_ENV === 'development') {
-  url = 'http://localhost:5000'
-} else {
-  url = 'https://shielded-sands-73829.herokuapp.com:5001'
-}
+// if (process.env.NODE_ENV === 'development') {
+//   url = 'http://localhost:5000'
+// } else {
+url = 'https://shielded-sands-73829.herokuapp.com'
+// }
 
 export const getData = path => {
   return axios
