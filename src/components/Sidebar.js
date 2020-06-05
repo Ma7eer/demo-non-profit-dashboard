@@ -164,16 +164,21 @@ export default class ControlledPanelGroup extends React.Component {
                 localStorage.getItem('admin') === 'true' ? (
                   <>
                     <Panel eventKey="5" style={panelStyle}>
-                      <Panel.Heading style={panelStyle}>
+                      <Panel.Heading
+                        style={panelStyle}
+                        onClick={() =>
+                          ToastrBanner('error', Message.notAuthorized)
+                        }
+                      >
                         <strong>
                           <a
-                            href="#"
+                            href="https://compassionate-bartik-d3fca5.netlify.app/"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{ color: 'white' }}
-                            onClick={() =>
-                              ToastrBanner('error', Message.notAuthorized)
-                            }
+                            // onClick={() =>
+                            //   ToastrBanner('error', Message.notAuthorized)
+                            // }
                           >
                             مرفقات الجمعية
                           </a>
